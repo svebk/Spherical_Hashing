@@ -23,8 +23,11 @@
 
 #define MAX_NUM_ITERATIONS		50
 
-#define INPUT_DATA_FILE_NAME	"F:\\KNN_Datasets\\BigANN_GIST_1M_960Dim\\Data.points"
-#define INPUT_QUERY_FILE_NAME	"F:\\KNN_Datasets\\BigANN_GIST_1M_960Dim\\Query.points"
+//#define INPUT_DATA_FILE_NAME	"F:\\KNN_Datasets\\BigANN_GIST_1M_960Dim\\Data.points"
+//#define INPUT_QUERY_FILE_NAME	"F:\\KNN_Datasets\\BigANN_GIST_1M_960Dim\\Query.points"
+
+#define INPUT_DATA_FILE_NAME	"/media/data/Data/Datasets/ANN/gist_base.fvecs"
+#define INPUT_QUERY_FILE_NAME	"/media/data/Data/Datasets/ANN/gist_query.fvecs"
 
 // to disable parallelization, comment out this
 #define USE_PARALLELIZATION		

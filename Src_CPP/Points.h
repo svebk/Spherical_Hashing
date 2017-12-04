@@ -25,7 +25,8 @@ public :
 	// v0 (floats, number of elements is equal to dimensionality)
 	// v1
 	// ...
-	void Initialize_From_File(char *fileName)
+	//void Initialize_From_File(char *fileName)
+	void Initialize_From_File(const char *fileName)
 	{
 		FILE *input = fopen( fileName , "rb" );
 		fread( &nP , sizeof(int) , 1 , input );
