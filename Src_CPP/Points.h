@@ -1,6 +1,9 @@
 #pragma once
 
 #include "Common.h"
+#include <iostream>
+
+using namespace std;
 
 class Points
 {
@@ -28,6 +31,7 @@ public :
 	//void Initialize_From_File(char *fileName)
 	void Initialize_From_File(const char *fileName)
 	{
+		cout << "Reading data from: " << fileName << endl;
 		FILE *input = fopen( fileName , "rb" );
 		fread( &nP , sizeof(int) , 1 , input );
 		fread( &dim , sizeof(int) , 1 , input );
@@ -46,6 +50,7 @@ public :
 			}
 		}
 		fclose(input);
+		cout << "Done reading data from: " << fileName << endl;
 		delete [] tmp;
 	}
 
